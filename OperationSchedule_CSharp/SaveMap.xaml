@@ -1,0 +1,34 @@
+﻿<Window x:Class="OperationSchedule_CSharp.SaveMap"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OperationSchedule_CSharp"
+        mc:Ignorable="d"
+        Title="SaveMap" Height="200" Width="500">
+    <Grid>
+		<UniformGrid Rows="6" Columns="1">
+			<Label Content="请输入代码及口令，以确认身份："/>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<Label Content="班别："/>
+				<TextBox Width="250"/>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<Label Content="姓名："/>
+				<TextBox Width="250"/>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<Label Content="代码："/>
+				<TextBox Width="250"/>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<Label Content="口令："/>
+				<TextBox Width="250"/>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<Button Content="确认"/>
+				<Button Content="取消"/>
+			</StackPanel>
+		</UniformGrid>
+	</Grid>
+</Window>

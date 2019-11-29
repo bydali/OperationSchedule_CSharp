@@ -1,0 +1,59 @@
+﻿<Window x:Class="OperationSchedule_CSharp.CountHandOver"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OperationSchedule_CSharp"
+        mc:Ignorable="d"
+        Title="CountHandOver" Width="800">
+    <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="30"/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
+			<TextBox Width="150"/>
+			<ComboBox>
+				<ComboBoxItem Content="长沙南"/>
+			</ComboBox>
+			<StackPanel Orientation="Horizontal">
+				<Label Content="上行" VerticalAlignment="Center"/>
+				<RadioButton Content="按到点"/>
+				<RadioButton Content="按发点"/>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<Label Content="下行" VerticalAlignment="Center"/>
+				<RadioButton Content="按到点"/>
+				<RadioButton Content="按发点"/>
+			</StackPanel>
+		</StackPanel>
+		<DataGrid Grid.Row="1">
+			<DataGrid.Columns>
+				<DataGridTextColumn Header="序号"/>
+				<DataGridTextColumn Header="类别"/>
+				<DataGridTextColumn Header="上行"/>
+				<DataGridTextColumn Header="下行"/>
+				<DataGridTextColumn Header="始发"/>
+				<DataGridTextColumn Header="终到"/>
+				<DataGridTextColumn Header="直通"/>
+				<DataGridTextColumn Header="作业"/>
+			</DataGrid.Columns>
+		</DataGrid>
+		<DataGrid Grid.Row="1" Grid.Column="1">
+			<DataGrid.Columns>
+				<DataGridTextColumn Header="序号"/>
+				<DataGridTextColumn Header="类别"/>
+				<DataGridTextColumn Header="上行"/>
+				<DataGridTextColumn Header="下行"/>
+				<DataGridTextColumn Header="始发"/>
+				<DataGridTextColumn Header="终到"/>
+				<DataGridTextColumn Header="直通"/>
+				<DataGridTextColumn Header="作业"/>
+			</DataGrid.Columns>
+		</DataGrid>
+	</Grid>
+</Window>

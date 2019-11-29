@@ -1,0 +1,112 @@
+﻿<Window x:Class="OperationSchedule_CSharp.ManageTrain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:local="clr-namespace:OperationSchedule_CSharp"
+        mc:Ignorable="d"
+        Title="ManageTrain" Width="800">
+    <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition Height="30"/>
+		</Grid.RowDefinitions>
+		<TabControl>
+			<TabItem Header="记事" Controls:ControlsHelper.HeaderFontSize="15">
+			</TabItem>
+			<TabItem Header="内部记事" Controls:ControlsHelper.HeaderFontSize="15">
+			</TabItem>
+			<TabItem Header="阶段计划" Controls:ControlsHelper.HeaderFontSize="15">
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="30"/>
+						<RowDefinition/>
+						<RowDefinition Height="30"/>
+					</Grid.RowDefinitions>
+					<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+						<RadioButton Content="一阶段"/>
+						<RadioButton Content="二阶段"/>
+						<RadioButton Content="三阶段"/>
+					</StackPanel>
+					<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="2">
+						<Label Content="气候："/>
+						<ComboBox>
+							<ComboBoxItem Content="晴"/>
+						</ComboBox>
+						<ComboBox>
+							<ComboBoxItem Content="晴"/>
+						</ComboBox>
+					</StackPanel>
+				</Grid>
+			</TabItem>
+			<TabItem Header="列车编组" Controls:ControlsHelper.HeaderFontSize="15">
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="30"/>
+						<RowDefinition/>
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition/>
+						<ColumnDefinition Width="auto"/>
+					</Grid.ColumnDefinitions>
+					<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+						<RadioButton Content="上行"/>
+						<RadioButton Content="下行"/>
+					</StackPanel>
+					<DataGrid Grid.Row="1">
+						<DataGrid.Columns>
+							<DataGridTextColumn Header="车次"/>
+							<DataGridTextColumn Header="机车"/>
+							<DataGridTextColumn Header="司机"/>
+							<DataGridTextColumn Header="车长"/>
+							<DataGridTextColumn Header="车数"/>
+							<DataGridTextColumn Header="吨位"/>
+							<DataGridTextColumn Header="长度"/>
+						</DataGrid.Columns>
+					</DataGrid>
+					<StackPanel Grid.Row="1" Grid.Column="1">
+						<StackPanel Orientation="Horizontal">
+							<Label Content="车次"/>
+							<TextBox Width="100"/>
+						</StackPanel>
+						<StackPanel Orientation="Horizontal">
+							<Label Content="机车"/>
+							<TextBox Width="100"/>
+						</StackPanel>
+						<StackPanel Orientation="Horizontal">
+							<Label Content="司机"/>
+							<TextBox Width="100"/>
+						</StackPanel>
+						<StackPanel Orientation="Horizontal">
+							<Label Content="车长"/>
+							<TextBox Width="100"/>
+						</StackPanel>
+						<StackPanel Orientation="Horizontal">
+							<Label Content="车数"/>
+							<TextBox Width="100"/>
+						</StackPanel>
+						<StackPanel Orientation="Horizontal">
+							<Label Content="吨位"/>
+							<TextBox Width="100"/>
+						</StackPanel>
+						<StackPanel Orientation="Horizontal">
+							<Label Content="长度"/>
+							<TextBox Width="100"/>
+						</StackPanel>
+						<Button Content="追加修改"/>
+						<Button Content="删除"/>
+					</StackPanel>
+				</Grid>
+			</TabItem>
+			<TabItem Header="计划台计划" Controls:ControlsHelper.HeaderFontSize="15">
+				
+			</TabItem>
+		</TabControl>
+		<StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+			<Button Content="确定"/>
+			<Button Content="保存"/>
+			<Button Content="取消"/>
+		</StackPanel>
+	</Grid>
+</Window>

@@ -1,0 +1,27 @@
+﻿<Window x:Class="OperationSchedule_CSharp.QueryConfirm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OperationSchedule_CSharp"
+        mc:Ignorable="d"
+        Title="QueryConfirm" Width="500">
+    <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="80"/>
+			<RowDefinition/>
+			<RowDefinition Height="30"/>
+		</Grid.RowDefinitions>
+		<GroupBox Header="确报查询">
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<Label Content="车次"/>
+				<TextBox Width="150"/>
+				<Button Content="查询"/>
+			</StackPanel>
+		</GroupBox>
+		<GroupBox Header="确报头列表">
+		</GroupBox>
+		<Label Grid.Row="2" Content="2019-11-12 12:23:54" HorizontalAlignment="Left"/>
+		<Button Grid.Row="2" Content="退出" HorizontalAlignment="Right"/>
+	</Grid>
+</Window>

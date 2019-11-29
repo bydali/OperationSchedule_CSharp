@@ -1,0 +1,99 @@
+﻿<Window x:Class="OperationSchedule_CSharp.SetInterval"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OperationSchedule_CSharp"
+        mc:Ignorable="d"
+        Title="SetInterval" Width="800">
+    <GroupBox Header="列车时间间隔参数">
+		<StackPanel>
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="auto"/>
+					<RowDefinition Height="auto"/>
+					<RowDefinition Height="auto"/>
+					<RowDefinition Height="auto"/>
+					<RowDefinition Height="auto"/>
+					<RowDefinition Height="auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="auto"/>
+				</Grid.ColumnDefinitions>
+				<Label Content="客车："/>
+				<Label Content="列车通过车站时间" Grid.Row="1"/>
+				<TextBox Width="100" Grid.Row="1" Grid.Column="1"/>
+				<Label Content="从进站到停妥时间" Grid.Row="2"/>
+				<TextBox Width="100" Grid.Row="2" Grid.Column="1"/>
+				<Label Content="前次通过站到可为下次列车开放信号" Grid.Row="3"/>
+				<TextBox Width="100" Grid.Row="3" Grid.Column="1"/>
+				<Label Content="通过列车从确认信号到通过车站" Grid.Row="4"/>
+				<TextBox Width="100" Grid.Row="4" Grid.Column="1"/>
+				<Label Content="从车站启动到全部出站" Grid.Row="5"/>
+				<TextBox Width="100" Grid.Row="5" Grid.Column="1"/>
+				<Label Content="前次列车发车后为下次列车准备信号" Grid.Row="1" Grid.Column="2"/>
+				<TextBox Width="100" Grid.Row="1" Grid.Column="3"/>
+			</Grid>
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="auto"/>
+					<RowDefinition Height="auto"/>
+					<RowDefinition Height="auto"/>
+					<RowDefinition Height="auto"/>
+					<RowDefinition Height="auto"/>
+					<RowDefinition Height="auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="auto"/>
+				</Grid.ColumnDefinitions>
+				<Label Content="货车："/>
+				<Label Content="列车通过车站时间" Grid.Row="1"/>
+				<TextBox Width="100" Grid.Row="1" Grid.Column="1"/>
+				<Label Content="从进站到停妥时间" Grid.Row="2"/>
+				<TextBox Width="100" Grid.Row="2" Grid.Column="1"/>
+				<Label Content="前次通过站到可为下次列车开放信号" Grid.Row="3"/>
+				<TextBox Width="100" Grid.Row="3" Grid.Column="1"/>
+				<Label Content="通过列车从确认信号到通过车站" Grid.Row="4"/>
+				<TextBox Width="100" Grid.Row="4" Grid.Column="1"/>
+				<Label Content="从车站启动到全部出站" Grid.Row="5"/>
+				<TextBox Width="100" Grid.Row="5" Grid.Column="1"/>
+				<Label Content="前次列车发车后为下次列车准备信号" Grid.Row="1" Grid.Column="2"/>
+				<TextBox Width="100" Grid.Row="1" Grid.Column="3"/>
+				<Label Content="从进站到停妥时间&#xD;&#xA;（货车与客车间 相隔一个闭塞分区）" Grid.Row="2" Grid.Column="2"/>
+				<TextBox Width="100" Grid.Row="2" Grid.Column="3"/>
+				<Label Content="前次通过站到可为下次列车开放信号&#xD;&#xA;（货车与客车间 相隔一个闭塞分区）" Grid.Row="3" Grid.Column="2"/>
+				<TextBox Width="100" Grid.Row="3" Grid.Column="3"/>
+				<Label Content="通过列车从确认信号到通过车站&#xD;&#xA;（货车与客车间 相隔一个闭塞分区）" Grid.Row="4" Grid.Column="2"/>
+				<TextBox Width="100" Grid.Row="4" Grid.Column="3"/>
+				<Label Content="前次列车发车后为下次列车准备信号时间&#xD;&#xA;（货车与客车间 相隔一个闭塞分区）" Grid.Row="5" Grid.Column="2"/>
+				<TextBox Width="100" Grid.Row="5" Grid.Column="3"/>
+			</Grid>
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="auto"/>
+					<RowDefinition Height="auto"/>
+					<RowDefinition Height="auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="auto"/>
+				</Grid.ColumnDefinitions>
+				<Label Content="半自动闭塞区间："/>
+				<Label Content="相对方向列车不同时到达时间间隔" Grid.Row="1"/>
+				<TextBox Width="100" Grid.Row="1" Grid.Column="1"/>
+				<Label Content="会车时间间隔" Grid.Row="2"/>
+				<TextBox Width="100" Grid.Row="2" Grid.Column="1"/>
+				<Label Content="同方向列车连发间隔时间" Grid.Row="1" Grid.Column="2"/>
+				<TextBox Width="100" Grid.Row="1" Grid.Column="3"/>
+			</Grid>
+		</StackPanel>
+	</GroupBox>
+</Window>

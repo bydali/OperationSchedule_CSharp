@@ -1,0 +1,28 @@
+﻿<Window x:Class="OperationSchedule_CSharp.ManageHanging"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OperationSchedule_CSharp"
+        mc:Ignorable="d"
+        Title="ManageHanging" Width="800">
+    <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="30"/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+			<TextBox Width="150"/>
+			<RadioButton Content="按车次排"/>
+			<RadioButton Content="按车站排"/>
+		</StackPanel>
+		<DataGrid Grid.Row="1">
+			<DataGrid.Columns>
+				<DataGridTextColumn Header="车次"/>
+				<DataGridTextColumn Header="车站"/>
+				<DataGridTextColumn Header="时间"/>
+				<DataGridTextColumn Header="甩挂信息"/>
+			</DataGrid.Columns>
+		</DataGrid>
+	</Grid>
+</Window>

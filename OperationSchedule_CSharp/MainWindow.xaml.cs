@@ -25,5 +25,88 @@ namespace OperationSchedule_CSharp
         {
             InitializeComponent();
         }
+
+        private void SaveMap(object sender, RoutedEventArgs e)
+        {
+            Window window = new SaveMap();
+            window.ShowDialog();
+        }
+
+        private void SetInterval(object sender, RoutedEventArgs e)
+        {
+            Window window = new SetInterval();
+            window.ShowDialog();
+        }
+
+        private void BatchGenaratePlan(object sender, RoutedEventArgs e)
+        {
+            Window window = new BatchGeneratePlan();
+            window.ShowDialog();
+        }
+
+        private void GeneratePlan(object sender, RoutedEventArgs e)
+        {
+            Window window = new GeneratePlan();
+            window.ShowDialog();
+        }
+
+        private void TransmitCommand(object sender, RoutedEventArgs e)
+        {
+            Window window = new TransmitCommand();
+            window.ShowDialog();
+        }
+
+        private void RegularTransmitCommand(object sender, RoutedEventArgs e)
+        {
+            Window window = new RegularTransmitCommand();
+            window.ShowDialog();
+        }
+
+        private void ManageTrain(object sender, RoutedEventArgs e)
+        {
+            Window window = new ManageTrain();
+            window.ShowDialog();
+        }
+
+        private void ManageCrew(object sender, RoutedEventArgs e)
+        {
+            Window window = new ManageCrew();
+            window.ShowDialog();
+        }
+
+        private void ManageAllStock(object sender, RoutedEventArgs e)
+        {
+            Window window = new ManageAllStock();
+            window.ShowDialog();
+        }
+
+        private void ManageHanging(object sender, RoutedEventArgs e)
+        {
+            Window window = new ManageHanging();
+            window.ShowDialog();
+        }
+
+        private void CountHandOver(object sender, RoutedEventArgs e)
+        {
+            Window window = new CountHandOver();
+            window.ShowDialog();
+        }
+
+        private void ReportTime(object sender, RoutedEventArgs e)
+        {
+            Window window = new ReportTime();
+            window.Show();
+        }
+
+        private void CloseWindow(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Windows.OfType<ReportTime>().First().Close();
+        }
+
+        private void QueryConfirm(object sender, RoutedEventArgs e)
+        {
+            Window window = new QueryConfirm();
+            window.ShowDialog();
+        }
     }
 }
